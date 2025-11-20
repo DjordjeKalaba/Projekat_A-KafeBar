@@ -1,0 +1,61 @@
+﻿<Window x:Class="Projekat_A_KafeBar.DodajIzmijeniStoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="{DynamicResource Sto_WindowTitle}"
+        Height="350" Width="300"
+        Background="{DynamicResource BackgroundBrush}">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Naslov -->
+        <TextBlock x:Name="TitleTextBlock" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,15"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+        <!-- Unos -->
+        <StackPanel Grid.Row="1" VerticalAlignment="Top" Margin="0,10,0,0">
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,5">
+                <TextBlock Text="{DynamicResource Sto_Kapacitet}" Width="100" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}"/>
+                <TextBox x:Name="KapacitetBox" Width="180" Height="25"
+                         Background="{DynamicResource SecondaryBrush}"
+                         Foreground="{DynamicResource TextBrush}"
+                         BorderBrush="{DynamicResource PrimaryBrush}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,5">
+                <TextBlock Text="{DynamicResource Sto_Status}" Width="100" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}"/>
+                <ComboBox x:Name="StatusBox" Width="180" Height="25"
+                          Background="{DynamicResource SecondaryBrush}"
+                          Foreground="{DynamicResource TextBrush}"
+                          BorderBrush="{DynamicResource PrimaryBrush}">
+                    <ComboBoxItem Content="Slobodan" Tag="Slobodan" IsSelected="True"/>
+                    <ComboBoxItem Content="Zauzet" Tag="Zauzet"/>
+                    <ComboBoxItem Content="Rezervisan" Tag="Rezervisan"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Dugmad -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button x:Name="SaveButton" Content="{DynamicResource Sto_Btn_Sacuvaj}" Width="100" Height="30" Margin="0,0,10,0"
+                    Background="{DynamicResource PrimaryBrush}" Foreground="{DynamicResource TextOnPrimaryBrush}"
+                    BorderBrush="{DynamicResource BorderBrush}" Click="SaveButton_Click"/>
+            <Button x:Name="CancelButton" Content="{DynamicResource Sto_Btn_Otkazi}" Width="100" Height="30"
+                    Background="{DynamicResource SecondaryBrush}" Foreground="{DynamicResource TextBrush}"
+                    BorderBrush="{DynamicResource BorderBrush}" Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

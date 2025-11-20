@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- OSNOVNE BOJE -->
+    <!-- Primarna svijetlo plava (sidebar, naglasci, dugmad) -->
+    <Color x:Key="PrimaryColor">#FFB3D9FF</Color>
+    <!-- Pastelna svijetlo plava -->
+
+    <!-- Sekundarna plava (hover, tonovi, sekundarni elementi) -->
+    <Color x:Key="SecondaryColor">#FFD6EBFF</Color>
+    <!-- Još svjetlija nijansa -->
+
+    <!-- Pozadina glavnog sadržaja -->
+    <Color x:Key="BackgroundColor">#FFFFFFFF</Color>
+    <!-- Bijela -->
+
+    <!-- Tekst -->
+    <Color x:Key="ForegroundColor">#FF000000</Color>
+    <!-- Crni tekst za čitljivost -->
+
+    <!-- Border linije i separacije -->
+    <Color x:Key="BorderColor">#FFB3CDE0</Color>
+    <!-- Blaga plava siva za granice -->
+
+    <!-- Hover boja -->
+    <Color x:Key="HoverColor">#FFE0F0FF</Color>
+    <!-- Lagano svijetlo plava za hover -->
+
+
+    <!-- BRUSHES -->
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource PrimaryColor}"/>
+    <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource SecondaryColor}"/>
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="HoverBrush" Color="{StaticResource HoverColor}"/>
+
+</ResourceDictionary>

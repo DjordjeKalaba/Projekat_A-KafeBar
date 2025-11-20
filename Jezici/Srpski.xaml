@@ -1,0 +1,249 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    
+    <!--Admin.xaml-->
+    <sys:String x:Key="Jezik_Text">Jezik</sys:String>
+    <sys:String x:Key="Tema_Text">Tema</sys:String>
+    <sys:String x:Key="Tema_Narandžasta">Narandžasta</sys:String>
+    <sys:String x:Key="Tema_Tamna">Tamna</sys:String>
+    <sys:String x:Key="Tema_Svijetla">Svijetla</sys:String>
+    <sys:String x:Key="Jezik_Srpski">Srpski</sys:String>
+    <sys:String x:Key="Jezik_Engleski">Engleski</sys:String>
+    <sys:String x:Key="Radnici_Text">Radnici</sys:String>
+    <sys:String x:Key="Proizvodi_Text">Proizvodi</sys:String>
+    <sys:String x:Key="Racuni_Text">Računi</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Text">Otvoreni računi</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Text">Zatvoreni računi</sys:String>
+    <sys:String x:Key="Kategorije_Text">Kategorije</sys:String>
+    <sys:String x:Key="Stolovi_Text">Stolovi</sys:String>
+    <sys:String x:Key="Odjava_Text">Odjava</sys:String>    
+    
+    <!--DodajIzmijeniKategorijuWindow.xaml-->
+    <sys:String x:Key="Kategorija_WindowTitle">Dodaj / Izmijeni kategoriju</sys:String>
+    <sys:String x:Key="Kategorija_Title_Add">Dodaj kategoriju</sys:String>
+    <sys:String x:Key="Kategorija_Title_Edit">Izmijeni kategoriju</sys:String>
+    <sys:String x:Key="Kategorija_Naziv">Naziv kategorije:</sys:String>
+    <sys:String x:Key="Save_Button">Sačuvaj</sys:String>
+    <sys:String x:Key="Cancel_Button">Otkaži</sys:String>
+    <sys:String x:Key="Msg_Kategorija_Prazno">Molimo unesite naziv kategorije!</sys:String>
+    <sys:String x:Key="Msg_Kategorija_Sacuvana">Kategorija je uspješno sačuvana!</sys:String>
+    <sys:String x:Key="Msg_Kategorija_Duplikat">Naziv kategorije već postoji!</sys:String>
+    
+    <!--DodajIzmijeniProizvodWindow.xaml-->
+    <sys:String x:Key="Proizvod_Naziv">Naziv:</sys:String>
+    <sys:String x:Key="Proizvod_Cijena">Cijena (KM):</sys:String>
+    <sys:String x:Key="Proizvod_Kolicina">Količina:</sys:String>
+    <sys:String x:Key="Proizvod_Kategorija">Kategorija:</sys:String>
+    <sys:String x:Key="Proizvod_Btn_Sacuvaj">Sačuvaj</sys:String>
+    <sys:String x:Key="Proizvod_Btn_Otkazi">Otkaži</sys:String>
+    <sys:String x:Key="Proizvod_Title_Add">Dodaj novi proizvod</sys:String>
+    <sys:String x:Key="Proizvod_Title_Edit">Izmijeni proizvod</sys:String>
+    <sys:String x:Key="Proizvod_WindowTitle">Dodaj / Izmijeni proizvod</sys:String>
+    <sys:String x:Key="Msg_Proizvod_PopuniSvaPolja">Popunite sva polja!</sys:String>
+    <sys:String x:Key="Msg_Proizvod_CijenaBroj">Cijena mora biti broj!</sys:String>
+    <sys:String x:Key="Msg_Proizvod_KolicinaCijeliBroj">Količina mora biti cijeli broj!</sys:String>
+    <sys:String x:Key="Msg_Proizvod_Sacuvan">Proizvod uspješno sačuvan!</sys:String>
+    <sys:String x:Key="Msg_Proizvod_Duplicate">Proizvod sa ovim nazivom već postoji!</sys:String>
+
+    <!---DodajIzmijeniRadnikaWindow.xaml-->
+    <sys:String x:Key="Radnik_Title_Add">Dodaj novog radnika</sys:String>
+    <sys:String x:Key="Radnik_Title_Edit">Izmijeni radnika</sys:String>
+    <sys:String x:Key="Radnik_Ime">Ime:</sys:String>
+    <sys:String x:Key="Radnik_Prezime">Prezime:</sys:String>
+    <sys:String x:Key="Radnik_KorisnickoIme">Korisničko ime:</sys:String>
+    <sys:String x:Key="Radnik_Lozinka">Nova lozinka:</sys:String>
+    <sys:String x:Key="Radnik_Uloga">Uloga:</sys:String>
+    <sys:String x:Key="Radnik_Uloga_Admin">Admin</sys:String>
+    <sys:String x:Key="Radnik_Uloga_Radnik">Radnik</sys:String>
+    <sys:String x:Key="Radnik_BrojTelefona">Broj telefona:</sys:String>
+    <sys:String x:Key="Radnik_Plata">Plata:</sys:String>
+    <sys:String x:Key="Radnik_Btn_Sacuvaj">Sačuvaj</sys:String>
+    <sys:String x:Key="Radnik_Btn_Otkazi">Odustani</sys:String>
+    <sys:String x:Key="Msg_Radnik_PopuniSvaPolja">Molimo popunite sva obavezna polja!</sys:String>
+    <sys:String x:Key="Msg_Radnik_PlataBroj">Unesite ispravan broj za platu!</sys:String>
+    <sys:String x:Key="Msg_Radnik_KorisnickoImePostoji">Korisničko ime već postoji! Unesite drugo.</sys:String>
+    <sys:String x:Key="Msg_Radnik_Sacuvan">Podaci uspješno sačuvani!</sys:String>
+    
+    <!---DodajIzmijeniStoWindow.xaml-->
+    <sys:String x:Key="Sto_WindowTitle">Dodaj/Izmijeni sto</sys:String>
+    <sys:String x:Key="Sto_Title_Add">Dodaj novi sto</sys:String>
+    <sys:String x:Key="Sto_Title_Edit">Izmijeni sto</sys:String>
+    <sys:String x:Key="Sto_Kapacitet">Kapacitet:</sys:String>
+    <sys:String x:Key="Sto_Status">Status:</sys:String>
+    <sys:String x:Key="Sto_Msg_Kapacitet">Unesite ispravan kapacitet!</sys:String>
+    <sys:String x:Key="Sto_Msg_ErrorTitle">Greška</sys:String>
+    <sys:String x:Key="Sto_Msg_Saved">Podaci su uspješno sačuvani!</sys:String>
+    <sys:String x:Key="Sto_Msg_SuccessTitle">Uspjeh</sys:String>
+    <sys:String x:Key="Sto_Btn_Sacuvaj">Sačuvaj</sys:String>
+    <sys:String x:Key="Sto_Btn_Otkazi">Otkaži</sys:String>
+    
+    <!---IzborStolaWindow.xaml-->
+    <sys:String x:Key="IzborStola_WindowTitle">Izaberite sto</sys:String>
+    <sys:String x:Key="IzborStola_Label">Izaberite sto:</sys:String>
+    <sys:String x:Key="IzborStolaButton_Izaberi">Izaberi</sys:String>
+    <sys:String x:Key="IzborStolaButton_Otkazi">Otkaži</sys:String>
+    <sys:String x:Key="IzborStola_Msg_NijeIzabran">Molimo izaberite sto.</sys:String>
+    <sys:String x:Key="IzborStola_Msg_WarningTitle">Upozorenje</sys:String>
+    
+    <!---KategorijaPage.xaml-->
+    <sys:String x:Key="Kategorije_Title">Kategorije</sys:String>
+    <sys:String x:Key="KategorijaButton_Dodaj">Dodaj kategoriju</sys:String>
+    <sys:String x:Key="KategorijaButton_Izmijeni">Izmijeni kategoriju</sys:String>
+    <sys:String x:Key="KategorijaButton_Obrisi">Obriši kategoriju</sys:String>
+    <sys:String x:Key="Kategorija_Header_Naziv">Naziv</sys:String>
+    <sys:String x:Key="Kategorija_Msg_OdabirBrisanje">Odaberite kategoriju za brisanje!</sys:String>
+    <sys:String x:Key="Kategorija_Msg_OdabirIzmjena">Odaberite kategoriju za izmjenu!</sys:String>
+    <sys:String x:Key="Kategorija_Msg_PotvrdaBrisanja">Obriši kategoriju '{0}'?</sys:String>
+    <sys:String x:Key="Kategorija_Msg_GreskaUcitaj">Greška pri učitavanju kategorija</sys:String>
+    <sys:String x:Key="Kategorija_Msg_PotvrdaNaslov">Potvrda</sys:String>
+    <sys:String x:Key="Kategorija_Msg_UpozorenjeNaslov">Upozorenje</sys:String>
+    
+    <!---NoviRacunPage.xaml-->
+    <sys:String x:Key="NoviRacun_Title">Kreiranje novog računa</sys:String>
+    <sys:String x:Key="NoviRacun_Label_Zaposleni">Zaposleni:</sys:String>
+    <sys:String x:Key="NoviRacun_Label_DatumVrijeme">Datum i vrijeme:</sys:String>
+    <sys:String x:Key="NoviRacun_Label_UkupanIznos">Ukupan iznos:</sys:String>
+    <sys:String x:Key="NoviRacun_Label_Sto">Sto:</sys:String>
+    <sys:String x:Key="NoviRacun_Button_Kreiraj">Kreiraj račun</sys:String>
+    <sys:String x:Key="NoviRacun_Button_Nazad">Nazad</sys:String>
+    <sys:String x:Key="NoviRacun_Nepoznato">Nepoznato</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_OdaberiSto">Odaberite sto za koji se kreira račun!</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_GreskaNaslov">Greška</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_StoRezervisan">Sto je rezervisan. Želite li kreirati račun i postaviti sto na zauzet?</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_PotvrdaNaslov">Potvrda</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_RacunKreiran">Račun uspješno kreiran! (ID: {0})</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_UspjehNaslov">Uspjeh</sys:String>
+    
+    <!---OtvoreniRacunPage.xaml-->
+    <sys:String x:Key="OtvoreniRacuni_Title">Otvoreni računi</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_ID">ID</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_Sto">Sto</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_Iznos">Iznos</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_Vrijeme">Vrijeme izdavanja</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_Zaposleni">Zaposleni</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Button_Azuriraj">Ažuriraj račun</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Msg_OdaberiRacun">Molimo odaberite račun koji želite ažurirati.</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Msg_Upozorenje">Upozorenje</sys:String>
+    
+    <!---ProizvodiPage.xaml-->
+
+    <sys:String x:Key="Proizvodi_Title">Proizvodi</sys:String>
+    <sys:String x:Key="Proizvodi_Filter_Kategorija">Kategorija:</sys:String>
+    <sys:String x:Key="Proizvodi_Button_Dodaj">Dodaj proizvod</sys:String>
+    <sys:String x:Key="Proizvodi_Button_Izmijeni">Izmijeni</sys:String>
+    <sys:String x:Key="Proizvodi_Button_Obrisi">Obriši</sys:String>
+    <sys:String x:Key="Proizvodi_Col_Naziv">Naziv</sys:String>
+    <sys:String x:Key="Proizvodi_Col_Kategorija">Kategorija</sys:String>
+    <sys:String x:Key="Proizvodi_Col_Cijena">Cijena (KM)</sys:String>
+    <sys:String x:Key="Proizvodi_Col_Kolicina">Količina</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_OdaberiIzmjena">Odaberite proizvod za izmjenu!</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_OdaberiBrisanje">Odaberite proizvod za brisanje!</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_PotvrdaBrisanja">Da li ste sigurni da želite obrisati proizvod '{0}'?</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_PotvrdaNaslov">Potvrda brisanja</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_GreskaUcitavanje">Greška pri učitavanju proizvoda: {0}</sys:String>
+
+    <!---RacunDetaljiPage.xaml-->
+    <sys:String x:Key="RacunDetalji_Title">Detalji računa</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_RacunID">Račun ID:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_Zaposleni">Zaposleni:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_UkupanIznos">Ukupan iznos:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_Kategorija">Kategorija:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_Proizvod">Proizvod:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_Kolicina">Količina:</sys:String>
+    <sys:String x:Key="RacunDetalji_Col_Proizvod">Proizvod</sys:String>
+    <sys:String x:Key="RacunDetalji_Col_Cijena">Cijena (KM)</sys:String>
+    <sys:String x:Key="RacunDetalji_Col_Kolicina">Količina</sys:String>
+    <sys:String x:Key="RacunDetalji_Col_Ukupno">Ukupno (KM)</sys:String>
+    <sys:String x:Key="RacunDetalji_Button_Dodaj">Dodaj</sys:String>
+    <sys:String x:Key="RacunDetalji_Button_Sacuvaj">Sačuvaj račun</sys:String>
+    <sys:String x:Key="RacunDetalji_Button_Zavrsi">Završi račun</sys:String>
+    <sys:String x:Key="RacunDetalji_Button_Nazad">Nazad</sys:String>
+    <sys:String x:Key="SelectProductAndQuantity">Odaberite proizvod i unesite količinu!</sys:String>
+    <sys:String x:Key="NotEnoughStock">Nema dovoljno proizvoda na stanju!</sys:String>
+    <sys:String x:Key="Warning">Upozorenje</sys:String>
+    <sys:String x:Key="Msg_RacunZatvoren">Račun je zatvoren i sto je oslobođen.</sys:String>
+    <sys:String x:Key="Msg_RacunZatvoren_Title">Završeno</sys:String>
+    <sys:String x:Key="Msg_RacunSacuvan">Račun sačuvan.</sys:String>
+    <sys:String x:Key="Msg_RacunSacuvan_Title">Sačuvano</sys:String>
+
+    <!---Radnici.xaml-->
+    <sys:String x:Key="TemaText">Tema:</sys:String>
+    <sys:String x:Key="JezikText">Jezik:</sys:String>
+    <sys:String x:Key="TemaNarandzasta">Narandžasta</sys:String>
+    <sys:String x:Key="TemaTamna">Tamna</sys:String>
+    <sys:String x:Key="TemaSvijetla">Svijetla</sys:String>
+    <sys:String x:Key="JezikSrpski">Srpski</sys:String>
+    <sys:String x:Key="JezikEngleski">Engleski</sys:String>
+    <sys:String x:Key="NoviRacunText">Novi račun</sys:String>
+    <sys:String x:Key="RacuniText">Računi</sys:String>
+    <sys:String x:Key="OtvoreniRacuniText">Otvoreni računi</sys:String>
+    <sys:String x:Key="ZatvoreniRacuniText">Zatvoreni računi</sys:String>
+    <sys:String x:Key="MeniPicaText">Meni pića</sys:String>
+    <sys:String x:Key="StoloviText">Stolovi</sys:String>
+    <sys:String x:Key="ProfilText">Profil</sys:String>
+    <sys:String x:Key="OdjavaText">Odjava</sys:String>
+    
+    <!---RadniciPage.xaml-->
+    <sys:String x:Key="DodajRadnikaText">Dodaj radnika</sys:String>
+    <sys:String x:Key="ObrisiRadnikaText">Obriši radnika</sys:String>
+    <sys:String x:Key="IzmijeniRadnikaText">Izmijeni radnika</sys:String>
+    <sys:String x:Key="ImeText">Ime</sys:String>
+    <sys:String x:Key="PrezimeText">Prezime</sys:String>
+    <sys:String x:Key="KorisnickoImeText">Korisničko ime</sys:String>
+    <sys:String x:Key="UlogaText">Uloga</sys:String>
+    <sys:String x:Key="BrojTelefonaText">Broj telefona</sys:String>
+    <sys:String x:Key="PlataText">Plata</sys:String>
+    <sys:String x:Key="GreskaText">Greška</sys:String>
+    <sys:String x:Key="GreskaUcitanjaText">Greška pri učitavanju radnika</sys:String>
+    <sys:String x:Key="PotvrdaText">Potvrda</sys:String>
+    <sys:String x:Key="InfoText">Informacija</sys:String>
+    <sys:String x:Key="PitanjeObrisiRadnikaText">Obriši radnika {0} {1}?</sys:String>
+    <sys:String x:Key="OdaberiteRadnikaText">Odaberite radnika za brisanje!</sys:String>
+    <sys:String x:Key="OdaberiteRadnikaIzmjenaText">Odaberite radnika za izmjenu!</sys:String>
+    
+    <!---RadnikProfilPage.xaml-->
+    <sys:String x:Key="ProfilNaslov">Moj profil</sys:String>
+    <sys:String x:Key="Ime">Ime:</sys:String>
+    <sys:String x:Key="Prezime">Prezime:</sys:String>
+    <sys:String x:Key="KorisnickoIme">Korisničko ime:</sys:String>
+    <sys:String x:Key="NovaLozinka">Nova lozinka:</sys:String>
+    <sys:String x:Key="BrojTelefona">Broj telefona:</sys:String>
+    <sys:String x:Key="Uloga">Uloga:</sys:String>
+    <sys:String x:Key="Plata">Plata:</sys:String>
+    <sys:String x:Key="Sacuvaj">Sačuvaj</sys:String>
+    <sys:String x:Key="Otkazi">Otkaži</sys:String>
+    <sys:String x:Key="Greska">Greška</sys:String>
+    <sys:String x:Key="Uspjeh">Uspjeh</sys:String>
+    <sys:String x:Key="Info">Informacija</sys:String>
+    <sys:String x:Key="GreskaPraznaPolja">Ime, prezime i korisničko ime ne mogu biti prazni!</sys:String>
+    <sys:String x:Key="GreskaKorimePostoji">Korisničko ime već postoji! Promjena nije moguća.</sys:String>
+    <sys:String x:Key="UspjehSacuvano">Podaci uspješno sačuvani!</sys:String>
+    <sys:String x:Key="PonistenePromjene">Promjene su poništene.</sys:String>
+    
+    <!---StoloviPage.xaml-->
+    <sys:String x:Key="StoloviPage_Title">Stolovi</sys:String>
+    <sys:String x:Key="Stolovi_DodajSto">Dodaj sto</sys:String>
+    <sys:String x:Key="Stolovi_IzmijeniSto">Izmijeni sto</sys:String>
+    <sys:String x:Key="Stolovi_ObrisiSto">Obriši sto</sys:String>
+    <sys:String x:Key="Stolovi_Osvjezi">Osvježi</sys:String>
+    <sys:String x:Key="Stolovi_Msg_OdaberiSto">Molimo odaberite sto!</sys:String>
+    <sys:String x:Key="Stolovi_Msg_PotvrdaBrisanja">Da li ste sigurni da želite obrisati sto?</sys:String>
+    <sys:String x:Key="Stolovi_Msg_DodatOK">Sto je uspješno dodat!</sys:String>
+    <sys:String x:Key="Stolovi_Msg_IzmjenaOK">Sto je uspješno izmijenjen!</sys:String>
+    <sys:String x:Key="Stolovi_Msg_BrisanjeOK">Sto je uspješno obrisan!</sys:String>
+    <sys:String x:Key="Stolovi_Msg_PromijeniURezervisan">Da li želite da rezervišete ovaj sto?</sys:String>
+    <sys:String x:Key="Stolovi_Msg_NemogucaPromjena">Nije moguće promijeniti status ovog stola.</sys:String>
+    <sys:String x:Key="Stolovi_Title_Info">Informacija</sys:String>
+
+
+    <!---ZatvoreniRacuniPage.xaml-->
+    <sys:String x:Key="ZatvoreniRacuni_Title">Zatvoreni računi</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Naslov">Zatvoreni računi</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Pregledaj">Pregledaj račun</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_ID">ID računa</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Sto">Sto</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Iznos">Iznos (KM)</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Vrijeme">Vrijeme</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Zaposleni">Zaposleni</sys:String>
+</ResourceDictionary>

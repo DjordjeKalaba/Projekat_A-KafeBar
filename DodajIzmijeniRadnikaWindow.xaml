@@ -1,0 +1,109 @@
+﻿<Window x:Class="Projekat_A_KafeBar.DodajIzmijeniRadnikaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekat_A_KafeBar"
+        mc:Ignorable="d"
+        Title="{DynamicResource Radnik_WindowTitle}"
+        Height="720" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{DynamicResource BackgroundBrush}"
+        Icon="Icon.png">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Naslov -->
+        <TextBlock Name="TitleTextBlock"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+        <!-- Polja -->
+        <StackPanel Grid.Row="1">
+
+            <Label Content="{DynamicResource Radnik_Ime}" FontSize="20" Foreground="{DynamicResource TextBrush}"/>
+            <TextBox Name="ImeBox" FontSize="20" Height="30"
+                     Background="{DynamicResource SecondaryBrush}"
+                     Foreground="{DynamicResource TextBrush}"
+                     BorderBrush="{DynamicResource PrimaryBrush}"/>
+
+            <Label Content="{DynamicResource Radnik_Prezime}" FontSize="20" Margin="0,10,0,0"
+                   Foreground="{DynamicResource TextBrush}"/>
+            <TextBox Name="PrezimeBox" FontSize="20" Height="30"
+                     Background="{DynamicResource SecondaryBrush}"
+                     Foreground="{DynamicResource TextBrush}"
+                     BorderBrush="{DynamicResource PrimaryBrush}"/>
+
+            <Label Content="{DynamicResource Radnik_KorisnickoIme}" FontSize="20" Margin="0,10,0,0"
+                   Foreground="{DynamicResource TextBrush}"/>
+            <TextBox Name="KorisnickoImeBox" FontSize="20" Height="30"
+                     Background="{DynamicResource SecondaryBrush}"
+                     Foreground="{DynamicResource TextBrush}"
+                     BorderBrush="{DynamicResource PrimaryBrush}"/>
+
+            <Label Content="{DynamicResource Radnik_Lozinka}" FontSize="20" Margin="0,10,0,0"
+                   Foreground="{DynamicResource TextBrush}"/>
+            <PasswordBox Name="LozinkaBox" FontSize="20" Height="30"
+                         Background="{DynamicResource SecondaryBrush}"
+                         Foreground="{DynamicResource TextBrush}"
+                         BorderBrush="{DynamicResource PrimaryBrush}"/>
+
+            <Label Content="{DynamicResource Radnik_Uloga}" FontSize="20" Margin="0,10,0,0"
+                   Foreground="{DynamicResource TextBrush}"/>
+            <ComboBox Name="UlogaBox" FontSize="20" Height="34"
+                      Background="{DynamicResource SecondaryBrush}"
+                      Foreground="{DynamicResource TextBrush}"
+                      BorderBrush="{DynamicResource PrimaryBrush}">
+                <ComboBoxItem Content="Admin" Tag="Admin"/>
+                <ComboBoxItem Content="Radnik" Tag="Radnik"/>
+            </ComboBox>
+
+            <Label Content="{DynamicResource Radnik_BrojTelefona}" FontSize="20" Margin="0,10,0,0"
+                   Foreground="{DynamicResource TextBrush}"/>
+            <TextBox Name="BrojTelefonaBox" FontSize="20" Height="30"
+                     Background="{DynamicResource SecondaryBrush}"
+                     Foreground="{DynamicResource TextBrush}"
+                     BorderBrush="{DynamicResource PrimaryBrush}"/>
+
+            <Label Content="{DynamicResource Radnik_Plata}" FontSize="20" Margin="0,10,0,0"
+                   Foreground="{DynamicResource TextBrush}"/>
+            <TextBox Name="PlataBox" FontSize="20" Height="30"
+                     Background="{DynamicResource SecondaryBrush}"
+                     Foreground="{DynamicResource TextBrush}"
+                     BorderBrush="{DynamicResource PrimaryBrush}"/>
+
+            <!-- Dugmad -->
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        Margin="0,20,0,0">
+
+                <Button Name="SaveButton"
+                        FontSize="20"
+                        Content="{DynamicResource Radnik_Btn_Sacuvaj}"
+                        Width="100"
+                        Margin="10"
+                        Background="{DynamicResource PrimaryBrush}"
+                        Foreground="{DynamicResource TextOnPrimaryBrush}"
+                        Click="SaveButton_Click"/>
+
+                <Button Content="{DynamicResource Radnik_Btn_Otkazi}"
+                        FontSize="20"
+                        Width="100"
+                        Margin="10"
+                        Background="{DynamicResource PrimaryBrush}"
+                        Foreground="{DynamicResource TextOnPrimaryBrush}"
+                        Click="CancelButton_Click"/>
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

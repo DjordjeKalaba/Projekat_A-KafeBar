@@ -1,0 +1,50 @@
+﻿<Page x:Class="Projekat_A_KafeBar.StoloviPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat_A_KafeBar"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="{DynamicResource StoloviPage_Title}"
+      Background="{DynamicResource BackgroundBrush}">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Dugmad -->
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button x:Name="DodajStoButton"
+                    Content="{DynamicResource Stolovi_DodajSto}" Width="140" Height="30"
+                    Background="{DynamicResource PrimaryBrush}"
+                    Click="DodajSto_Click"/>
+
+            <Button x:Name="IzmijeniStoButton"
+                    Content="{DynamicResource Stolovi_IzmijeniSto}" Width="140" Height="30"
+                    Background="{DynamicResource PrimaryBrush}"
+                    Margin="10,0,0,0"
+                    Click="IzmijeniSto_Click"/>
+
+            <Button x:Name="ObrisiStoButton"
+                    Content="{DynamicResource Stolovi_ObrisiSto}" Width="140" Height="30"
+                    Background="{DynamicResource SecondaryBrush}"
+                    Margin="10,0,0,0"
+                    Click="ObrisiSto_Click"/>
+
+            <Button x:Name="OsvjeziButton"
+                    Content="{DynamicResource Stolovi_Osvjezi}" Width="120" Height="30"
+                    Background="{DynamicResource SecondaryBrush}"
+                    Margin="10,0,0,0"
+                    Click="Osvjezi_Click"/>
+        </StackPanel>
+
+        <!-- WrapPanel sa stolovima -->
+        <ScrollViewer Grid.Row="1">
+            <WrapPanel x:Name="StoloviWrapPanel" HorizontalAlignment="Center"/>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

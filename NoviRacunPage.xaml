@@ -1,0 +1,77 @@
+﻿<Page x:Class="Projekat_A_KafeBar.NoviRacunPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat_A_KafeBar"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="{DynamicResource NoviRacun_Title}"
+      Loaded="Page_Loaded">
+
+    <Grid Background="{DynamicResource BackgroundBrush}" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Naslov -->
+        <TextBlock Text="{DynamicResource NoviRacun_Title}" 
+                   FontSize="30" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Margin="0,0,0,20"
+                   Foreground="{DynamicResource ForegroundBrush}"/>
+
+        <!-- Glavni sadržaj -->
+        <StackPanel Grid.Row="1" Margin="20">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="{DynamicResource NoviRacun_Label_Zaposleni}" Width="120" VerticalAlignment="Center"
+                           Foreground="{DynamicResource ForegroundBrush}"/>
+                <TextBox Name="ZaposleniBox" IsReadOnly="True" Width="250"
+                         Background="{DynamicResource BackgroundBrush}"
+                         Foreground="{DynamicResource ForegroundBrush}"
+                         BorderBrush="{DynamicResource BorderBrush}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="{DynamicResource NoviRacun_Label_DatumVrijeme}" Width="120" VerticalAlignment="Center"
+                           Foreground="{DynamicResource ForegroundBrush}"/>
+                <TextBox Name="VrijemeBox" IsReadOnly="True" Width="250"
+                         Background="{DynamicResource BackgroundBrush}"
+                         Foreground="{DynamicResource ForegroundBrush}"
+                         BorderBrush="{DynamicResource BorderBrush}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                <TextBlock Text="{DynamicResource NoviRacun_Label_UkupanIznos}" Width="120" VerticalAlignment="Center"
+                           Foreground="{DynamicResource ForegroundBrush}"/>
+                <TextBox Name="UkupanIznosBox" IsReadOnly="True" Width="250" Text="0.00 KM"
+                         Background="{DynamicResource BackgroundBrush}"
+                         Foreground="{DynamicResource ForegroundBrush}"
+                         BorderBrush="{DynamicResource BorderBrush}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                <TextBlock Text="{DynamicResource NoviRacun_Label_Sto}" Width="120" VerticalAlignment="Center"
+                           Foreground="{DynamicResource ForegroundBrush}"/>
+                <ComboBox Name="StoComboBox" Width="250" DisplayMemberPath="Naziv" SelectedValuePath="IdSto"
+                          Background="{DynamicResource BackgroundBrush}"
+                          Foreground="{DynamicResource ForegroundBrush}"
+                          BorderBrush="{DynamicResource BorderBrush}"/>
+            </StackPanel>
+
+            <Button Name="KreirajRacunButton" 
+                    Content="{DynamicResource NoviRacun_Button_Kreiraj}" 
+                    Width="200" 
+                    Height="40" 
+                    Background="{DynamicResource PrimaryBrush}"
+                    Foreground="{DynamicResource ForegroundBrush}"
+                    FontWeight="Bold"
+                    Click="KreirajRacunButton_Click"/>
+        </StackPanel>
+
+        
+    </Grid>
+</Page>

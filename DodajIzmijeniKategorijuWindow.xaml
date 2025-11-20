@@ -1,0 +1,52 @@
+﻿<Window x:Class="Projekat_A_KafeBar.DodajIzmijeniKategorijuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekat_A_KafeBar"
+        mc:Ignorable="d"
+        Title="{DynamicResource Kategorija_WindowTitle}" Height="200" Width="350" WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource BackgroundBrush}">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TitleTextBlock"
+                   Text="{DynamicResource Kategorija_Title_Add}"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   Margin="0,0,0,10"
+                   Foreground="{DynamicResource TextBrush}"/>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="{DynamicResource Kategorija_Naziv}"
+                       Foreground="{DynamicResource TextBrush}"/>
+            <TextBox x:Name="NazivBox"
+                     Margin="0,5,0,10"
+                     Background="{DynamicResource SecondaryBrush}"
+                     Foreground="{DynamicResource TextBrush}"
+                     BorderBrush="{DynamicResource PrimaryBrush}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="2"
+                    HorizontalAlignment="Right">
+            <Button Content="{DynamicResource Save_Button}"
+                    Width="80"
+                    Margin="0,0,10,0"
+                    Background="{DynamicResource PrimaryBrush}"
+                    Foreground="{DynamicResource TextOnPrimaryBrush}"
+                    Click="SaveButton_Click"/>
+
+            <Button Content="{DynamicResource Cancel_Button}"
+                    Width="80"
+                    Background="{DynamicResource PrimaryBrush}"
+                    Foreground="{DynamicResource TextOnPrimaryBrush}"
+                    Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

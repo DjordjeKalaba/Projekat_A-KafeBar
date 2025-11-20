@@ -1,0 +1,249 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--Admin.xaml-->
+    <sys:String x:Key="Jezik_Text">Language</sys:String>
+    <sys:String x:Key="Tema_Text">Theme</sys:String>
+    <sys:String x:Key="Tema_Narandžasta">Orange</sys:String>
+    <sys:String x:Key="Tema_Tamna">Dark</sys:String>
+    <sys:String x:Key="Tema_Svijetla">Light</sys:String>
+    <sys:String x:Key="Jezik_Srpski">Serbian</sys:String>
+    <sys:String x:Key="Jezik_Engleski">English</sys:String>
+    <sys:String x:Key="Radnici_Text">Workers</sys:String>
+    <sys:String x:Key="Proizvodi_Text">Products</sys:String>
+    <sys:String x:Key="Racuni_Text">Bills</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Text">Open bills</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Text">Closed bills</sys:String>
+    <sys:String x:Key="Kategorije_Text">Categories</sys:String>
+    <sys:String x:Key="Stolovi_Text">Tables</sys:String>
+    <sys:String x:Key="Odjava_Text">Logout</sys:String>
+
+    <!--DodajIzmijeniKategorijuWindow.xaml-->
+    <sys:String x:Key="Kategorija_WindowTitle">Add / Edit Category</sys:String>
+    <sys:String x:Key="Kategorija_Title_Add">Add Category</sys:String>
+    <sys:String x:Key="Kategorija_Title_Edit">Edit Category</sys:String>
+    <sys:String x:Key="Kategorija_Naziv">Category name:</sys:String>
+    <sys:String x:Key="Save_Button">Save</sys:String>
+    <sys:String x:Key="Cancel_Button">Cancel</sys:String>
+    <sys:String x:Key="Msg_Kategorija_Prazno">Please enter a category name!</sys:String>
+    <sys:String x:Key="Msg_Kategorija_Sacuvana">Category has been saved successfully!</sys:String>
+    <sys:String x:Key="Msg_Kategorija_Duplikat">Category name already exists!</sys:String>
+    
+    <!--DodajIzmijeniProizvodWindow.xaml-->
+    <sys:String x:Key="Proizvod_Naziv">Name:</sys:String>
+    <sys:String x:Key="Proizvod_Cijena">Price (KM):</sys:String>
+    <sys:String x:Key="Proizvod_Kolicina">Quantity:</sys:String>
+    <sys:String x:Key="Proizvod_Kategorija">Category:</sys:String>
+    <sys:String x:Key="Proizvod_Btn_Sacuvaj">Save</sys:String>
+    <sys:String x:Key="Proizvod_Btn_Otkazi">Cancel</sys:String>
+    <sys:String x:Key="Proizvod_Title_Add">Add new product</sys:String>
+    <sys:String x:Key="Proizvod_Title_Edit">Edit product</sys:String>
+    <sys:String x:Key="Proizvod_WindowTitle">Add / Edit product</sys:String>
+    <sys:String x:Key="Msg_Proizvod_PopuniSvaPolja">Please fill in all fields!</sys:String>
+    <sys:String x:Key="Msg_Proizvod_CijenaBroj">Price must be a number!</sys:String>
+    <sys:String x:Key="Msg_Proizvod_KolicinaCijeliBroj">Quantity must be an integer!</sys:String>
+    <sys:String x:Key="Msg_Proizvod_Sacuvan">Product saved successfully!</sys:String>
+    <sys:String x:Key="Msg_Proizvod_Duplicate">A product with this name already exists!</sys:String>
+
+    <!---DodajIzmijeniRadnikaWindow.xaml-->
+    <sys:String x:Key="Radnik_Title_Add">Add new employee</sys:String>
+    <sys:String x:Key="Radnik_Title_Edit">Edit employee</sys:String>
+    <sys:String x:Key="Radnik_Ime">First name:</sys:String>
+    <sys:String x:Key="Radnik_Prezime">Last name:</sys:String>
+    <sys:String x:Key="Radnik_KorisnickoIme">Username:</sys:String>
+    <sys:String x:Key="Radnik_Lozinka">New password:</sys:String>
+    <sys:String x:Key="Radnik_Uloga">Role:</sys:String>
+    <sys:String x:Key="Radnik_Uloga_Admin">Admin</sys:String>
+    <sys:String x:Key="Radnik_Uloga_Radnik">Employee</sys:String>
+    <sys:String x:Key="Radnik_BrojTelefona">Phone number:</sys:String>
+    <sys:String x:Key="Radnik_Plata">Salary:</sys:String>
+    <sys:String x:Key="Radnik_Btn_Sacuvaj">Save</sys:String>
+    <sys:String x:Key="Radnik_Btn_Otkazi">Cancel</sys:String>
+    <sys:String x:Key="Msg_Radnik_PopuniSvaPolja">Please fill in all required fields!</sys:String>
+    <sys:String x:Key="Msg_Radnik_PlataBroj">Enter a valid number for salary!</sys:String>
+    <sys:String x:Key="Msg_Radnik_KorisnickoImePostoji">Username already exists! Enter another.</sys:String>
+    <sys:String x:Key="Msg_Radnik_Sacuvan">Data saved successfully!</sys:String>
+    
+    <!---DodajIzmijeniStoWindow.xaml-->
+    <sys:String x:Key="Sto_WindowTitle">Add/Edit Table</sys:String>
+    <sys:String x:Key="Sto_Title_Add">Add new table</sys:String>
+    <sys:String x:Key="Sto_Title_Edit">Edit table</sys:String>
+    <sys:String x:Key="Sto_Kapacitet">Capacity:</sys:String>
+    <sys:String x:Key="Sto_Status">Status:</sys:String>
+    <sys:String x:Key="Sto_Msg_Kapacitet">Enter a valid capacity!</sys:String>
+    <sys:String x:Key="Sto_Msg_ErrorTitle">Error</sys:String>
+    <sys:String x:Key="Sto_Msg_Saved">Data saved successfully!</sys:String>
+    <sys:String x:Key="Sto_Msg_SuccessTitle">Success</sys:String>
+    <sys:String x:Key="Sto_Btn_Sacuvaj">Save</sys:String>
+    <sys:String x:Key="Sto_Btn_Otkazi">Cancel</sys:String>
+    
+    <!---IzborStolaWindow.xaml-->
+    <sys:String x:Key="IzborStola_WindowTitle">Select Table</sys:String>
+    <sys:String x:Key="IzborStola_Label">Select a table:</sys:String>
+    <sys:String x:Key="IzborStolaButton_Izaberi">Select</sys:String>
+    <sys:String x:Key="IzborStolaButton_Otkazi">Cancel</sys:String>
+    <sys:String x:Key="IzborStola_Msg_NijeIzabran">Please select a table.</sys:String>
+    <sys:String x:Key="IzborStola_Msg_WarningTitle">Warning</sys:String>
+    
+    <!---KategorijaPage.xaml-->
+    <sys:String x:Key="Kategorije_Title">Categories</sys:String>
+    <sys:String x:Key="KategorijaButton_Dodaj">Add Category</sys:String>
+    <sys:String x:Key="KategorijaButton_Izmijeni">Edit Category</sys:String>
+    <sys:String x:Key="KategorijaButton_Obrisi">Delete Category</sys:String>
+    <sys:String x:Key="Kategorija_Header_Naziv">Name</sys:String>
+    <sys:String x:Key="Kategorija_Msg_OdabirBrisanje">Select a category to delete!</sys:String>
+    <sys:String x:Key="Kategorija_Msg_OdabirIzmjena">Select a category to edit!</sys:String>
+    <sys:String x:Key="Kategorija_Msg_PotvrdaBrisanja">Delete category '{0}'?</sys:String>
+    <sys:String x:Key="Kategorija_Msg_GreskaUcitaj">Error loading categories</sys:String>
+    <sys:String x:Key="Kategorija_Msg_PotvrdaNaslov">Confirmation</sys:String>
+    <sys:String x:Key="Kategorija_Msg_UpozorenjeNaslov">Warning</sys:String>
+    
+    <!---NoviRacunPage.xaml-->
+    <sys:String x:Key="NoviRacun_Title">Create New Bill</sys:String>
+    <sys:String x:Key="NoviRacun_Label_Zaposleni">Employee:</sys:String>
+    <sys:String x:Key="NoviRacun_Label_DatumVrijeme">Date and Time:</sys:String>
+    <sys:String x:Key="NoviRacun_Label_UkupanIznos">Total Amount:</sys:String>
+    <sys:String x:Key="NoviRacun_Label_Sto">Table:</sys:String>
+    <sys:String x:Key="NoviRacun_Button_Kreiraj">Create Bill</sys:String>
+    <sys:String x:Key="NoviRacun_Button_Nazad">Back</sys:String>
+    <sys:String x:Key="NoviRacun_Nepoznato">Unknown</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_OdaberiSto">Select a table to create the bill!</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_GreskaNaslov">Error</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_StoRezervisan">The table is reserved. Do you want to create the bill and set the table as occupied?</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_PotvrdaNaslov">Confirmation</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_RacunKreiran">Bill successfully created! (ID: {0})</sys:String>
+    <sys:String x:Key="NoviRacun_Msg_UspjehNaslov">Success</sys:String>
+    
+    <!---OtvoreniRacunPage.xaml-->
+    <sys:String x:Key="OtvoreniRacuni_Title">Open Bills</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_ID">ID</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_Sto">Table</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_Iznos">Amount</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_Vrijeme">Issued Time</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Col_Zaposleni">Employee</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Button_Azuriraj">Update Bill</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Msg_OdaberiRacun">Please select the bill you want to update.</sys:String>
+    <sys:String x:Key="OtvoreniRacuni_Msg_Upozorenje">Warning</sys:String>
+    
+    <!---ProizvodiPage.xaml-->
+
+    <sys:String x:Key="Proizvodi_Title">Products</sys:String>
+    <sys:String x:Key="Proizvodi_Filter_Kategorija">Category:</sys:String>
+    <sys:String x:Key="Proizvodi_Button_Dodaj">Add Product</sys:String>
+    <sys:String x:Key="Proizvodi_Button_Izmijeni">Edit</sys:String>
+    <sys:String x:Key="Proizvodi_Button_Obrisi">Delete</sys:String>
+    <sys:String x:Key="Proizvodi_Col_Naziv">Name</sys:String>
+    <sys:String x:Key="Proizvodi_Col_Kategorija">Category</sys:String>
+    <sys:String x:Key="Proizvodi_Col_Cijena">Price (KM)</sys:String>
+    <sys:String x:Key="Proizvodi_Col_Kolicina">Quantity</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_OdaberiIzmjena">Please select a product to edit!</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_OdaberiBrisanje">Please select a product to delete!</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_PotvrdaBrisanja">Are you sure you want to delete the product '{0}'?</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_PotvrdaNaslov">Delete Confirmation</sys:String>
+    <sys:String x:Key="Proizvodi_Msg_GreskaUcitavanje">Error loading products: {0}</sys:String>
+
+    <!---RacunDetaljiPage.xaml-->
+    <sys:String x:Key="RacunDetalji_Title">Bill Details</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_RacunID">Bill ID:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_Zaposleni">Employee:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_UkupanIznos">Total Amount:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_Kategorija">Category:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_Proizvod">Product:</sys:String>
+    <sys:String x:Key="RacunDetalji_Label_Kolicina">Quantity:</sys:String>
+    <sys:String x:Key="RacunDetalji_Col_Proizvod">Product</sys:String>
+    <sys:String x:Key="RacunDetalji_Col_Cijena">Price (KM)</sys:String>
+    <sys:String x:Key="RacunDetalji_Col_Kolicina">Quantity</sys:String>
+    <sys:String x:Key="RacunDetalji_Col_Ukupno">Total (KM)</sys:String>
+    <sys:String x:Key="RacunDetalji_Button_Dodaj">Add</sys:String>
+    <sys:String x:Key="RacunDetalji_Button_Sacuvaj">Save Bill</sys:String>
+    <sys:String x:Key="RacunDetalji_Button_Zavrsi">Close Bill</sys:String>
+    <sys:String x:Key="RacunDetalji_Button_Nazad">Back</sys:String>
+    <sys:String x:Key="SelectProductAndQuantity">Please select a product and enter the quantity!</sys:String>
+    <sys:String x:Key="NotEnoughStock">Not enough product in stock!</sys:String>
+    <sys:String x:Key="Warning">Warning</sys:String>
+    <sys:String x:Key="Msg_RacunZatvoren">The bill has been closed and the table has been freed.</sys:String>
+    <sys:String x:Key="Msg_RacunZatvoren_Title">Completed</sys:String>
+    <sys:String x:Key="Msg_RacunSacuvan">Bill saved.</sys:String>
+    <sys:String x:Key="Msg_RacunSacuvan_Title">Saved</sys:String>
+
+    <!---Radnici.xaml-->
+    <sys:String x:Key="TemaText">Theme:</sys:String>
+    <sys:String x:Key="JezikText">Language:</sys:String>
+    <sys:String x:Key="TemaNarandzasta">Orange</sys:String>
+    <sys:String x:Key="TemaTamna">Dark</sys:String>
+    <sys:String x:Key="TemaSvijetla">Light</sys:String>
+    <sys:String x:Key="JezikSrpski">Serbian</sys:String>
+    <sys:String x:Key="JezikEngleski">English</sys:String>
+    <sys:String x:Key="NoviRacunText">New Bill</sys:String>
+    <sys:String x:Key="RacuniText">Bills</sys:String>
+    <sys:String x:Key="OtvoreniRacuniText">Open Bills</sys:String>
+    <sys:String x:Key="ZatvoreniRacuniText">Closed Bills</sys:String>
+    <sys:String x:Key="MeniPicaText">Drink Menu</sys:String>
+    <sys:String x:Key="StoloviText">Tables</sys:String>
+    <sys:String x:Key="ProfilText">Profile</sys:String>
+    <sys:String x:Key="OdjavaText">Logout</sys:String>
+    
+    <!---RadniciPage.xaml-->
+    <sys:String x:Key="DodajRadnikaText">Add Employee</sys:String>
+    <sys:String x:Key="ObrisiRadnikaText">Delete Employee</sys:String>
+    <sys:String x:Key="IzmijeniRadnikaText">Edit Employee</sys:String>
+    <sys:String x:Key="ImeText">First Name</sys:String>
+    <sys:String x:Key="PrezimeText">Last Name</sys:String>
+    <sys:String x:Key="KorisnickoImeText">Username</sys:String>
+    <sys:String x:Key="UlogaText">Role</sys:String>
+    <sys:String x:Key="BrojTelefonaText">Phone Number</sys:String>
+    <sys:String x:Key="PlataText">Salary</sys:String>
+    <sys:String x:Key="GreskaText">Error</sys:String>
+    <sys:String x:Key="GreskaUcitanjaText">Error loading employees</sys:String>
+    <sys:String x:Key="PotvrdaText">Confirmation</sys:String>
+    <sys:String x:Key="InfoText">Information</sys:String>
+    <sys:String x:Key="PitanjeObrisiRadnikaText">Delete employee {0} {1}?</sys:String>
+    <sys:String x:Key="OdaberiteRadnikaText">Select an employee to delete!</sys:String>
+    <sys:String x:Key="OdaberiteRadnikaIzmjenaText">Select an employee to edit!</sys:String>
+    
+    <!---RadnikProfilPage.xaml-->
+    <sys:String x:Key="ProfilNaslov">My Profile</sys:String>
+    <sys:String x:Key="Ime">First name:</sys:String>
+    <sys:String x:Key="Prezime">Last name:</sys:String>
+    <sys:String x:Key="KorisnickoIme">Username:</sys:String>
+    <sys:String x:Key="NovaLozinka">New password:</sys:String>
+    <sys:String x:Key="BrojTelefona">Phone number:</sys:String>
+    <sys:String x:Key="Uloga">Role:</sys:String>
+    <sys:String x:Key="Plata">Salary:</sys:String>
+    <sys:String x:Key="Sacuvaj">Save</sys:String>
+    <sys:String x:Key="Otkazi">Cancel</sys:String>
+    <sys:String x:Key="Greska">Error</sys:String>
+    <sys:String x:Key="Uspjeh">Success</sys:String>
+    <sys:String x:Key="Info">Information</sys:String>
+    <sys:String x:Key="GreskaPraznaPolja">First name, last name and username cannot be empty!</sys:String>
+    <sys:String x:Key="GreskaKorimePostoji">Username already exists! Change not possible.</sys:String>
+    <sys:String x:Key="UspjehSacuvano">Data saved successfully!</sys:String>
+    <sys:String x:Key="PonistenePromjene">Changes have been reverted.</sys:String>
+    
+    <!---StoloviPage.xaml-->
+    <sys:String x:Key="StoloviPage_Title">Tables</sys:String>
+    <sys:String x:Key="Stolovi_DodajSto">Add table</sys:String>
+    <sys:String x:Key="Stolovi_IzmijeniSto">Edit table</sys:String>
+    <sys:String x:Key="Stolovi_ObrisiSto">Delete table</sys:String>
+    <sys:String x:Key="Stolovi_Osvjezi">Refresh</sys:String>
+    <sys:String x:Key="Stolovi_Msg_OdaberiSto">Please select a table!</sys:String>
+    <sys:String x:Key="Stolovi_Msg_PotvrdaBrisanja">Are you sure you want to delete this table?</sys:String>
+    <sys:String x:Key="Stolovi_Msg_DodatOK">Table added successfully!</sys:String>
+    <sys:String x:Key="Stolovi_Msg_IzmjenaOK">Table updated successfully!</sys:String>
+    <sys:String x:Key="Stolovi_Msg_BrisanjeOK">Table deleted successfully!</sys:String>
+    <sys:String x:Key="Stolovi_Msg_PromijeniURezervisan">Do you want to reserve this table?</sys:String>
+    <sys:String x:Key="Stolovi_Msg_NemogucaPromjena">It is not possible to change the status of this table.</sys:String>
+    <sys:String x:Key="Stolovi_Title_Info">Information</sys:String>
+
+    <!---ZatvoreniRacuniPage.xaml-->
+    <sys:String x:Key="ZatvoreniRacuni_Title">Closed Receipts</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Naslov">Closed Receipts</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Pregledaj">View Receipt</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_ID">Receipt ID</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Sto">Table</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Iznos">Amount (KM)</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Vrijeme">Time</sys:String>
+    <sys:String x:Key="ZatvoreniRacuni_Zaposleni">Employee</sys:String>
+
+</ResourceDictionary>

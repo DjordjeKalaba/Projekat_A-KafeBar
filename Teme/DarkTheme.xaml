@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Osnovne boje -->
+    <Color x:Key="PrimaryColor">#FF2E2E2E</Color>
+    <!-- Glavna tamna pozadina -->
+    <Color x:Key="SecondaryColor">#FF3F3F3F</Color>
+    <!-- Tamnija za naglaske i panel -->
+    <Color x:Key="BackgroundColor">#FF1C1C1C</Color>
+    <!-- Opšta pozadina prozora -->
+    <Color x:Key="ForegroundColor">DarkOrange</Color>
+    <!-- Narandzasti tekst -->
+    <Color x:Key="BorderColor">#FFAAAAAA</Color>
+    <!-- Svijetla siva granica -->
+
+    <!-- Brush-evi -->
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource PrimaryColor}"/>
+    <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource SecondaryColor}"/>
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource BorderColor}"/>
+
+    <!-- Hover efekti za dugmad -->
+    <SolidColorBrush x:Key="HoverBrush" Color="#FF505050"/>
+    <!-- Blaga svijetlo-siva nijansa za hover dugmadi -->
+
+</ResourceDictionary>

@@ -1,0 +1,79 @@
+﻿<Page x:Class="Projekat_A_KafeBar.RadnikProfilPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat_A_KafeBar"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RadnikProfilPage">
+
+    <Grid Background="{DynamicResource BackgroundBrush}" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="{DynamicResource ProfilNaslov}" 
+                   FontSize="36" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,20"
+                   Foreground="{DynamicResource ForegroundBrush}"/>
+
+        <Grid Grid.Row="1" Width="500" HorizontalAlignment="Left">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Polja -->
+
+            <TextBlock Text="{DynamicResource Ime}" FontSize="20" Grid.Row="0" Grid.Column="0" Margin="0,5"/>
+            <TextBox Name="ImeBox" FontSize="22" Grid.Row="0" Grid.Column="1" Height="35"/>
+
+            <TextBlock Text="{DynamicResource Prezime}" FontSize="20" Grid.Row="1" Grid.Column="0" Margin="0,5"/>
+            <TextBox Name="PrezimeBox" FontSize="22" Grid.Row="1" Grid.Column="1" Height="35"/>
+
+            <TextBlock Text="{DynamicResource KorisnickoIme}" FontSize="20" Grid.Row="2" Grid.Column="0" Margin="0,5"/>
+            <TextBox Name="KorisnickoImeBox" FontSize="22" Grid.Row="2" Grid.Column="1" Height="35"/>
+
+            <TextBlock Text="{DynamicResource NovaLozinka}" FontSize="20" Grid.Row="3" Grid.Column="0" Margin="0,5"/>
+            <PasswordBox Name="LozinkaBox" FontSize="22" Grid.Row="3" Grid.Column="1" Height="35"/>
+
+            <TextBlock Text="{DynamicResource BrojTelefona}" FontSize="20" Grid.Row="4" Grid.Column="0" Margin="0,5"/>
+            <TextBox Name="BrojTelefonaBox" FontSize="22" Grid.Row="4" Grid.Column="1" Height="35"/>
+
+            <TextBlock Text="{DynamicResource Uloga}" FontSize="20" Grid.Row="5" Grid.Column="0" Margin="0,5"/>
+            <TextBox Name="UlogaBox" FontSize="22" Grid.Row="5" Grid.Column="1" Height="35" IsReadOnly="True"/>
+
+            <TextBlock Text="{DynamicResource Plata}" FontSize="20" Grid.Row="6" Grid.Column="0" Margin="0,5"/>
+            <TextBox Name="PlataBox" FontSize="22" Grid.Row="6" Grid.Column="1" Height="35" IsReadOnly="True"/>
+
+            <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal" Margin="0,20,0,0">
+
+                <Button Name="SaveButton" 
+                        Content="{DynamicResource Sacuvaj}" 
+                        Width="120" Height="40" Margin="0,0,10,0"
+                        Click="SaveButton_Click"/>
+
+                <Button Name="CancelButton" 
+                        Content="{DynamicResource Otkazi}" 
+                        Width="120" Height="40"
+                        Click="CancelButton_Click"/>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,126 @@
+﻿<Window x:Class="Projekat_A_KafeBar.Radnici"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        ResizeMode="CanResize"
+        Icon="Icon.png"
+        Title="RadniciMain"
+        Height="900" Width="1700"
+        Background="{DynamicResource BackgroundBrush}">
+
+    <Grid x:Name="radniciMain">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Lijevi meni -->
+        <Border Grid.Column="0" Background="{DynamicResource PrimaryBrush}">
+            <StackPanel>
+                <Image Source="/Logo.png" Margin="42,37,42,37" VerticalAlignment="Top"/>
+
+                <!-- Tema -->
+                <StackPanel Orientation="Horizontal" Margin="12" VerticalAlignment="Center">
+                    <TextBlock Text="{DynamicResource TemaText}" VerticalAlignment="Center" 
+                               Foreground="{DynamicResource ForegroundBrush}" FontSize="20" Margin="0,0,10,0"/>
+                    <ComboBox x:Name="TemaComboBox" Width="150" Height="35" FontSize="18"
+                              Background="{DynamicResource PrimaryBrush}" 
+                              Foreground="{DynamicResource ForegroundBrush}" 
+                              HorizontalContentAlignment="Center"
+                              SelectionChanged="TemaComboBox_SelectionChanged">
+                        <ComboBoxItem Content="{DynamicResource TemaNarandzasta}" Tag="OrangeTheme"/>
+                        <ComboBoxItem Content="{DynamicResource TemaTamna}" Tag="DarkTheme"/>
+                        <ComboBoxItem Content="{DynamicResource TemaSvijetla}" Tag="LightTheme"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Jezik -->
+                <StackPanel Orientation="Horizontal" Margin="12" VerticalAlignment="Center">
+                    <TextBlock Text="{DynamicResource JezikText}" VerticalAlignment="Center" 
+                               FontSize="20" Foreground="{DynamicResource ForegroundBrush}" Margin="0,0,10,0"/>
+                    <ComboBox x:Name="JezikComboBox" Width="150" Height="35" FontSize="18"
+                              Background="{DynamicResource SecondaryBrush}"
+                              Foreground="{DynamicResource ForegroundBrush}"
+                              BorderBrush="{DynamicResource BorderBrush}"
+                              HorizontalContentAlignment="Center"
+                              SelectionChanged="JezikComboBox_SelectionChanged">
+                        <ComboBoxItem Content="{DynamicResource JezikSrpski}" Tag="Srpski"/>
+                        <ComboBoxItem Content="{DynamicResource JezikEngleski}" Tag="Engleski"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Navigacija -->
+                <ListBox Background="Transparent" BorderThickness="0" Foreground="{DynamicResource ForegroundBrush}" FontFamily="Segoe UI">
+
+                    <!-- Novi račun -->
+                    <ListBoxItem Selected="ListBoxItem_Selected_NoviRacun">
+                        <StackPanel Orientation="Horizontal" Margin="12">
+                            <materialDesign:PackIcon Kind="AddBox" Width="26" Height="40" Margin="0,0,12,0" Foreground="{DynamicResource ForegroundBrush}"/>
+                            <TextBlock Text="{DynamicResource NoviRacunText}" FontSize="30" VerticalAlignment="Center" Foreground="{DynamicResource ForegroundBrush}"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <!-- Dugme Racuni sa dropdown -->
+                    <StackPanel Orientation="Vertical" Margin="12">
+                        <Button x:Name="btnRacuni" Width="200" Height="40" Background="Transparent" 
+                                Foreground="{DynamicResource ForegroundBrush}" FontSize="20" Click="btnRacuni_Click" HorizontalContentAlignment="Left">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                <materialDesign:PackIcon Kind="Receipt" Width="26" Height="40" Margin="0,0,12,0" Foreground="{DynamicResource ForegroundBrush}"/>
+                                <TextBlock Text="{DynamicResource RacuniText}" FontSize="30" VerticalAlignment="Center" Foreground="{DynamicResource ForegroundBrush}"/>
+                                <TextBlock Text=" ▼" Margin="5,0,0,0" VerticalAlignment="Center" Foreground="{DynamicResource ForegroundBrush}"/>
+                            </StackPanel>
+                            <Button.ContextMenu>
+                                <ContextMenu Background="{DynamicResource PrimaryBrush}" Foreground="{DynamicResource ForegroundBrush}" FontSize="20">
+                                    <MenuItem Header="{DynamicResource OtvoreniRacuniText}" Click="OtvoreniRacuni_Click"/>
+                                    <MenuItem Header="{DynamicResource ZatvoreniRacuniText}" Click="ZatvoreniRacuni_Click"/>
+                                </ContextMenu>
+                            </Button.ContextMenu>
+                        </Button>
+                    </StackPanel>
+
+                    <!-- Meni pića -->
+                    <ListBoxItem Selected="ListBoxItem_Selected_MeniPica">
+                        <StackPanel Orientation="Horizontal" Margin="12">
+                            <materialDesign:PackIcon Kind="Cup" Width="26" Height="40" Margin="0,0,12,0" Foreground="{DynamicResource ForegroundBrush}"/>
+                            <TextBlock Text="{DynamicResource MeniPicaText}" FontSize="30" VerticalAlignment="Center" Foreground="{DynamicResource ForegroundBrush}"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <!-- Stolovi -->
+                    <ListBoxItem Selected="ListBoxItem_Selected_Stolovi">
+                        <StackPanel Orientation="Horizontal" Margin="12">
+                            <materialDesign:PackIcon Kind="TableChair" Width="26" Height="40" Margin="0,0,12,0" Foreground="{DynamicResource ForegroundBrush}"/>
+                            <TextBlock Text="{DynamicResource StoloviText}" FontSize="30" VerticalAlignment="Center" Foreground="{DynamicResource ForegroundBrush}"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <!-- Profil -->
+                    <ListBoxItem Selected="ListBoxItem_Selected_Profil">
+                        <StackPanel Orientation="Horizontal" Margin="12">
+                            <materialDesign:PackIcon Kind="AccountCircle" Width="26" Height="40" Margin="0,0,12,0" Foreground="{DynamicResource ForegroundBrush}"/>
+                            <TextBlock Text="{DynamicResource ProfilText}" FontSize="30" VerticalAlignment="Center" Foreground="{DynamicResource ForegroundBrush}"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <!-- Odjava -->
+                    <ListBoxItem Selected="ListBoxItem_Selected_Odjava">
+                        <StackPanel Orientation="Horizontal" Margin="12">
+                            <materialDesign:PackIcon Kind="Logout" Width="26" Height="40" Margin="0,0,12,0" Foreground="{DynamicResource ForegroundBrush}"/>
+                            <TextBlock Text="{DynamicResource OdjavaText}" FontSize="30" VerticalAlignment="Center" Foreground="{DynamicResource ForegroundBrush}"/>
+                        </StackPanel>
+                    </ListBoxItem>
+
+                </ListBox>
+            </StackPanel>
+        </Border>
+
+        <!-- Desni prikaz sadržaja -->
+        <Border Grid.Column="1" Background="{DynamicResource BackgroundBrush}">
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        </Border>
+    </Grid>
+</Window>
